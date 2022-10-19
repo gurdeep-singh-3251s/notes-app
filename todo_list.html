@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TODO List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+      .notes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      body{
+        background-color: rgba(255, 212, 144, 0.763);
+      }
+      
+    </style>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Revelin Notes</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" id="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" id="searchbtn">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  
+
+
+    
+    <h2 class="text-center my-5"><b>Welcome To Revelin Notes</b></h2>
+
+
+    <div class="card  text-center " style="width: 50vw;margin-left: 25vw; background-color: rgb(238, 236, 115);">
+      <div class="card-body" >
+        <h4 class="card-title" ><b>Add A Title </b></h4>
+        <div class="input-group flex-nowrap">
+          <input type="text"  id="titleinput" class="form-control text-center bg-danger" style="opacity: 1; background-color: rgba(229, 159, 98, 0.867);" placeholder="Title" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+        <h4 class="card-title" ><b>Add A Note</b></h4>
+        <div class="mb-3">
+          <textarea class="form-control txt"  id="textarea" rows="3"  style="background-color: rgb(236, 214, 185);"></textarea>
+        </div>
+        
+        <button  class="btn btn-primary addbtn" id="addbtn">Add Note</button>
+      </div>
+    </div>
+    <hr>
+
+
+
+    <div class="notes align-content-center justify-content-center" id="notes">
+
+      <h2 class="text-center"><b>Notes</b></h2>
+      
+      <p>YOu Don't have add any note kindly add a note to proceed !!</p>
+
+    </div>
+    <script src="script1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
